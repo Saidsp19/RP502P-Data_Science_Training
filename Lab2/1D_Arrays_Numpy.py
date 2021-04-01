@@ -71,15 +71,50 @@ a[2::2]
 
 a[-3:-6:-2]
 
-3) In the Spyder Console, do the arithmetic operations indicated. In each case, observe the data type and the values of the resulting array in the Variable Explorer. 
-Array names are the ones created in Exer. 1 above.
+'''3) In the Spyder Console, do the arithmetic operations indicated. In each case, observe the data type and the values of the resulting array in the Variable Explorer. 
+Array names are the ones created in Exer. 1 above.'''
 
-a. Square each value of the array a.
+#a. Square each value of the array a.
+a = a**2
 
-b. Find the size of the array c.
+#b. Find the size of the array c.
+c.size
 
-c. Explain what happens when you multiply 2 with array e.
+#c. Explain what happens when you multiply 2 with array e.
+e = e*2
+Traceback (most recent call last):
 
-d. Compute mean and standard deviation of array d.
+  File "<ipython-input-6-b678ffc92e94>", line 1, in <module>
+    e = e*2
 
-4) Create array x containing 5 numbers, y containing another 5 numbers, and z containing 2 rows each with 5 numbers. Observe the results of x+y, x+z, x*y, x*z.
+UFuncTypeError: ufunc 'multiply' did not contain a loop with signature matching types (dtype('<U11'), dtype('<U11')) -> dtype('<U11')
+
+#d. Compute mean and standard deviation of array d.
+np.mean(d)
+np.std(d)
+
+
+
+'''4) Create array 
+    x containing 5 numbers, 
+    y containing another 5 numbers, and 
+    z containing 2 rows each with 5 numbers. 
+    Observe the results of x+y, x+z, x*y, x*z.'''
+
+x = np.array([10,11,12,13,14])
+
+y = np.array([16,17,18,19,20])
+
+z = np.array([10,11,12,13,14],
+             [16,17,18,19,20])
+
+
+x+y
+
+x+z
+
+x*y
+    
+x*z
+    
+    
